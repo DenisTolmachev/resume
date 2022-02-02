@@ -1,40 +1,24 @@
 body {
   background-color: #e5e5e5;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   width: 1200px;
   background-color: #fff;
   margin: 40px auto;
-  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-}
-@media screen and (min-width: 320px) {
-  .main-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+   @media screen and (min-width: 320px) {
+    flex-direction: column-reverse
   }
 }
 
 /* main-content-section */
 .main-content-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 60px 70px;
 }
 
@@ -146,7 +130,6 @@ body {
   color: #a8a8a8;
   margin: 0 0 10px 0;
 }
-
 .work-experience-devider,
 .education-period-devider {
   color: #000;
@@ -250,4 +233,4 @@ body {
   font-weight: normal;
   line-height: 24px;
   color: #ffffff;
-}/*# sourceMappingURL=style.css.map */
+}
