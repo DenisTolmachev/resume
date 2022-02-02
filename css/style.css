@@ -7,22 +7,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  width: 1200px;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 100%;
   background-color: #fff;
-  margin: 40px auto;
+  margin: 0 auto;
   -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
   .main-container {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-container {
+    width: 1200px;
   }
 }
 
@@ -35,7 +40,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 60px 70px;
+  padding: 10px 15px;
+}
+@media screen and (min-width: 768px) {
+  .main-content-section {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-content-section {
+    width: 70%;
+    padding: 40px 80px;
+  }
 }
 
 .about-me-profession {
@@ -51,10 +67,10 @@ body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 40px;
+  line-height: 1.2x;
   color: #000000;
-  margin-bottom: 25px;
+  margin: 20px 0;
 }
 
 .about-me-text {
@@ -74,11 +90,11 @@ body {
   font-size: 22px;
   line-height: 27px;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .my-projects-section {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .my-projects-list,
@@ -100,14 +116,13 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  margin-left: 15px;
 }
 
 .my-projects-link {
   text-decoration: none;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 24px;
   color: #595959;
 }
@@ -135,7 +150,13 @@ body {
 }
 
 .work-experience-company {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
   color: #fb6d3a;
+  margin: 10px 0;
 }
 
 .work-experience-time {
@@ -158,7 +179,6 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  padding-left: 10px;
 }
 
 .education-institution {
@@ -188,25 +208,60 @@ body {
   margin: 0 0 20px 0;
 }
 
-.sidebar-section {
+.sidebar-section,
+.sidebar-section--mobile {
   background-color: #1e2939;
   padding: 40px 0;
 }
 
+.sidebar-section {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sidebar-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sidebar-section {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-section--mobile {
+    display: none;
+  }
+}
+
 .my-photo-section {
-  width: 370px;
+  width: 100%;
   height: 354px;
   overflow: hidden;
 }
 
 .my-photo {
-  width: 370px;
+  width: 100%;
 }
 
 .contacts-section,
 .tech-skills-section,
 .soft-skills-sektion {
-  margin: 50px 0 0 40px;
+  margin: 30px 0 0 20px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts-section,
+.tech-skills-section,
+.soft-skills-sektion {
+    margin: 30px 0 0 40px;
+  }
 }
 
 .sidebar-title {
