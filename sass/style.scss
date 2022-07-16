@@ -28,7 +28,7 @@ body {
   }
   @media screen and (min-width: 1200px) {
     width: 70%;
-	 padding: 40px 80px;
+    padding: 40px 80px;
   }
 }
 
@@ -103,6 +103,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #595959;
+  margin-right: 5px;
 }
 
 .my-projects-bracket {
@@ -135,9 +136,6 @@ body {
   line-height: 20px;
   color: #fb6d3a;
   margin: 10px 0;
-
-
-
 }
 
 .work-experience-time {
@@ -198,22 +196,20 @@ body {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
-	 flex-direction: column;
-	 width: 40%;
+    flex-direction: column;
+    width: 40%;
   }
-  
+
   @media screen and (min-width: 1200px) {
     width: 30%;
   }
 }
 
 .sidebar-section--mobile {
-	@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
-
 
 .my-photo-section {
   width: 100%;
@@ -275,4 +271,16 @@ body {
   font-weight: normal;
   line-height: 24px;
   color: #ffffff;
+}
+
+.projects-link-container {
+  display: flex;
+  height: 25px;
+}
+
+.git-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
 }
