@@ -263,8 +263,8 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .contacts-section,
-.tech-skills-section,
-.soft-skills-sektion {
+  .tech-skills-section,
+  .soft-skills-sektion {
     margin: 30px 0 0 40px;
   }
 }
